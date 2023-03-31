@@ -1,7 +1,8 @@
+import './Footer.css'
 function Footer (){
     return (
     <div className="App">
-        <h1>Footer</h1>
+        <h1 id='footer'>Footer</h1>
     </div>
     );
 }
