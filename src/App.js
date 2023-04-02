@@ -1,13 +1,14 @@
 import React from 'react'
 import './App.css'
-import Article from './Article/Article'
-import Header from './Header/Header'
+import Product from './Product/Product'
+
 
 export default function App() {
   return (
-    <div>
-      <Header/>
-      <Article/>
+    <div className='container'>
+      <Product/>
+      <Product/>
+      <Product/>
     </div>
   )
 }
