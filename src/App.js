@@ -8,7 +8,8 @@ export default function App() {
       <Product
         title="Samsung Galaxy Book 2 Pro 360"
         image="./images/laptop2.jpg"
-        price="899"
+        price={899}
+        count={10}
         description="Samsung's latest big-screen two-in-one doesn't look
          all too different from its predecessor, but inside is a new 12th-gen
           Intel processor that gives it a sizable multicore performance bump.
@@ -19,7 +20,8 @@ export default function App() {
       <Product
         title="Microsoft Surface Pro 8"
         image="./images/laptop3.jpg"
-        price="799"
+        price={799}
+        count={0}
         description="The Surface Pro continues to hit all the right notes
          if you're looking for a do-it-all Windows tablet that doubles as
           a Windows laptop. Microsoft recently updated it for the Surface
@@ -33,7 +35,8 @@ export default function App() {
       <Product
         title="Lenovo Duet Chromebook"
         image="./images/laptop4.jpg"
-        price="333"
+        price={333}
+        count={0}
         description="The Lenovo Duet Chromebook (aka Chromebook Duet 3) is
          an awesome little 11-inch ChromeOS tablet with a detachable keyboard
           and touchpad. Its small size and performance aren't ideal for full-time use.
@@ -47,7 +50,8 @@ export default function App() {
       <Product
         title="Asus ROG Flow X16"
         image="./images/laptop5.jpg"
-        price="2000"
+        price={2000}
+        count={23}
         description="Gaming laptops with 16-inch screens are common enough.
          What's unusual is finding one with a 360-degree hinge to become a
           foldable two-in-one that can be a laptop, a tablet and a couple of 
