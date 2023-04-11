@@ -3,13 +3,40 @@ import "./App.css";
 import Product from "./Product/Product";
 
 export default function App() {
+  const allProducts = [
+    {
+      id: 0,
+      title: "Samsung Galaxy Book 2 Pro 360",
+      image: "./images/laptop2.jpg",
+      price: 899,
+      count: 10,
+    },
+    {
+      id: 1,
+      title: "Microsoft Surface Pro 8",
+      image: "./images/laptop2.jpg",
+      price: 799,
+      count: 11,
+    },
+    {
+      id: 2,
+      title: "Lenovo Duet Chromebook",
+      image: "./images/laptop2.jpg",
+      price: 333,
+      count: 16,
+    },
+    {
+      id: 3,
+      title: "Asus ROG Flow X16",
+      image: "./images/laptop2.jpg",
+      price: 2000,
+      count: 18,
+    },
+  ];
   return (
     <div className="container">
       <Product
-        title="Samsung Galaxy Book 2 Pro 360"
-        image="./images/laptop2.jpg"
-        price={899}
-        count={10}
+        {...allProducts[0]}
         description="Samsung's latest big-screen two-in-one doesn't look
          all too different from its predecessor, but inside is a new 12th-gen
           Intel processor that gives it a sizable multicore performance bump.
@@ -18,10 +45,7 @@ export default function App() {
              And if you have other Galaxy devices, this is absolutely the two-in-one to get. "
       />
       <Product
-        title="Microsoft Surface Pro 8"
-        image="./images/laptop3.jpg"
-        price={799}
-        count={0}
+        {...allProducts[1]}
         description="The Surface Pro continues to hit all the right notes
          if you're looking for a do-it-all Windows tablet that doubles as
           a Windows laptop. Microsoft recently updated it for the Surface
@@ -33,10 +57,7 @@ export default function App() {
             Surface Pro 9. "
       />
       <Product
-        title="Lenovo Duet Chromebook"
-        image="./images/laptop4.jpg"
-        price={333}
-        count={0}
+        {...allProducts[2]}
         description="The Lenovo Duet Chromebook (aka Chromebook Duet 3) is
          an awesome little 11-inch ChromeOS tablet with a detachable keyboard
           and touchpad. Its small size and performance aren't ideal for full-time use.
@@ -48,10 +69,7 @@ export default function App() {
          for $300 or less when it is in stock. "
       />
       <Product
-        title="Asus ROG Flow X16"
-        image="./images/laptop5.jpg"
-        price={2000}
-        count={23}
+        {...allProducts[3]}
         description="Gaming laptops with 16-inch screens are common enough.
          What's unusual is finding one with a 360-degree hinge to become a
           foldable two-in-one that can be a laptop, a tablet and a couple of 
