@@ -1,5 +1,5 @@
 import "./Product.css";
-export default function Product({count,image,title,price,description}) {
+export default function Product({count,image="./images/noimg.png",title,price,description}) {
   
     // return (
     //   (count)&& 
@@ -34,3 +34,11 @@ export default function Product({count,image,title,price,description}) {
   return null;
 
 }
+
+// Product.defaultProps ={
+//   image: './images/noimg.png',
+//   title:'',
+//   price:'',
+//   description:'',
+//   count:''
+// }
