@@ -1,21 +1,6 @@
 import "./Product.css";
-export default function Product({count,image="./images/noimg.png",title,price,description}) {
-  
-    // return (
-    //   (count)&& 
-    //   <div className="productCard">
-    //     <div className="card">
-    //       <img src={image} alt="product"></img>
-    //       <h1>{title}</h1>
-    //       <p className="price">${price}</p>
-    //       <p className="details">{description}</p>
-    //       <p>
-    //         <button>Add To Card</button>
-    //       </p>
-    //     </div>
-    //   </div>
-    // ); 
-// another way
+export default function Product({count,image="./images/noimg.png",title,price,description,children}) {
+
   if(count){
     return (
       <div className="productCard">
@@ -25,6 +10,9 @@ export default function Product({count,image="./images/noimg.png",title,price,de
           <p className="price">${price}</p>
           <p className="details">{description}</p>
           <p>
+            {children}
+            </p>
+            <p>
             <button>Add To Card</button>
           </p>
         </div>
@@ -34,11 +22,3 @@ export default function Product({count,image="./images/noimg.png",title,price,de
   return null;
 
 }
-
-// Product.defaultProps ={
-//   image: './images/noimg.png',
-//   title:'',
-//   price:'',
-//   description:'',
-//   count:''
-// }
